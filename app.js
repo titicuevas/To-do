@@ -36,12 +36,16 @@ function obtenerguardar() {
 
     vista.innerHTML += `<div class="card mb-6">
         <div class = "card-body">
-        <p> ${titulo}</p>
+        <h1> ${titulo}</h1>
+       <hr>
         <div>
         <p>${descripcion}</p>
         </div>
         <a class="btn btn-danger" onclick="borrar('${titulo}')">
         Borrar
+        </a>
+        <a class="btn btn-info" onclick="editar('${titulo}')">
+        Editar
         </a>
 
         </div>
@@ -58,7 +62,13 @@ function borrar(titulo) {
   }
   localStorage.setItem('tarea',JSON.stringify(tarea));
   obtenerguardar();
- console.log(borrar());
+
+}
+
+function editar(titulo) {
+  let tarea = JSON.parse(localStorage.getItem('tarea'));
+  
+  
 }
 
 obtenerguardar();
