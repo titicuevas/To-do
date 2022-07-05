@@ -19,3 +19,6 @@ Puedes descargar el codigo para probar su funcionamiento de esta manera
 ```shell
 git clone https://github.com/titicuevas/To-do
 ```
+# Ver el proyecto
+<a href="https://github.com/titicuevas/TresenRaya"></a>
+https://titicuevas.github.io/To-do/
